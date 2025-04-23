@@ -97,9 +97,6 @@ Pastikan Hadoop sudah berjalan dan HDFS dalam keadaan aktif (`jps` menunjukkan `
    hdfs dfs -mv /latihan1/contoh.txt /latihan2/
    ```
 
-Berikut README lengkap untuk latihan **B. Wordcount MapReduce** menggunakan Hadoop:
-
-
 # 📝 Latihan WordCount MapReduce
 
 Latihan ini bertujuan memahami proses komputasi paralel di Hadoop dengan membuat program WordCount untuk menghitung frekuensi kemunculan kata dalam teks.
