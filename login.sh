@@ -1,1 +1,1 @@
-docker exec -it bigdata-hadoop   "/bin/bash"
+docker exec -it bigdata-hadoop "/bin/bash"
