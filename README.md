@@ -49,42 +49,51 @@ Setelah prasyarat selesai, ikuti langkah-langkah berikut:
    ```bash
    cd C:\bigdata-hadoop
     ```
+8. **Salin file `hadoop-3.4.1.tar.gz` ke folder ini**  
+   File ini *tidak* diunduh otomatis oleh Dockerfile.  
+   - Unduh dari: [https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz](https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz)  
+   - Pindahkan ke folder `bigdata-hadoop`
 
-8. **Bangun Docker Image**
+   > 💡 **Catatan:** Jika ingin Docker otomatis mengunduh file, bisa tambahkan perintah `curl` ke dalam `Dockerfile` seperti:
+   ```Dockerfile
+   RUN curl -O https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz
+   ```
+
+9. **Bangun Docker Image**
    ```bash
    bash build.sh
    ```
 
-9. **Jalankan Container**
+10. **Jalankan Container**
    ```bash
    bash start.sh
    ```
 
-10. **Cek Apakah Container Jalan**
+11. **Cek Apakah Container Jalan**
    ```bash
    docker ps -a
    ```
 
-11. **Login ke Container**
+12. **Login ke Container**
    ```bash
    bash login.sh
    ```
 
-12. **Cek Aktivitas Hadoop**
+13. **Cek Aktivitas Hadoop**
    ```bash
    jps
    ```
 
-13. **Cek Web UI**
+14. **Cek Web UI**
    - Hadoop Namenode: [http://localhost:9870](http://localhost:9870)
    - Hadoop Resource Manager: [http://localhost:8088](http://localhost:8088)
 
-14. **Keluar dari Container**
+15. **Keluar dari Container**
    ```bash
    exit
    ```
 
-15. **Hentikan Container**
+16. **Hentikan Container**
    ```bash
    bash stop.sh
    ```
