@@ -3,7 +3,7 @@ FROM ubuntu:24.04
 LABEL key="sainsdata-itera"
 
 # Langkah 2: Install Dep
-RUN apt-get update && apt-get -y install sudo
+RUN apt-get update && apt-get -y install sudo adduser
 RUN adduser --disabled-password --gecos '' docker
 RUN adduser docker sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
