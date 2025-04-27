@@ -1,2 +1,1 @@
 docker stop bigdata-hadoop
- 

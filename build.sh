@@ -1,1 +1,1 @@
-docker build -t bigdata-hadoop ./
+docker build -t bigdata-hadoop .

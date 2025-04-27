@@ -1,5 +1,5 @@
 # Langkah 1: Base Image
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 LABEL key="sainsdata-itera"
 
 # Langkah 2: Install Dep

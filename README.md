@@ -15,7 +15,7 @@ Sebelum memulai, pastikan Anda telah menginstal dan menyiapkan hal-hal berikut:
 3. **Install WSL dan Ubuntu 22.04 di Windows**  
    Buka PowerShell (Run as Administrator) dan jalankan:
    ```bash
-   wsl --install -d Ubuntu-22.04
+   wsl --install -d Ubuntu-24.04
    ```
 
 4. **Buka Terminal Ubuntu (WSL)**  
